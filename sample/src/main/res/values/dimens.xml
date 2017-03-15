@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="generic_size_normal">10dip</dimen>
+    <dimen name="corner_radius">10dip</dimen>
+</resources>

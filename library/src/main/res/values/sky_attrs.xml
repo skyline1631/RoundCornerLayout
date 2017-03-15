@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SkyRoundCornerLayout">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="topEnabled" format="boolean" />
+        <attr name="bottomEnabled" format="boolean" />
+        <attr name="topLeftEnabled" format="boolean" />
+        <attr name="topRightEnabled" format="boolean" />
+        <attr name="bottomLeftEnabled" format="boolean" />
+        <attr name="bottomRightEnabled" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/generic_size_normal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- Default -->
+    <com.skyline.widget.layout.RoundCornerLayout
+        android:id="@+id/main_round_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Default"
+            android:textColor="@android:color/white"
+            android:background="@color/style_1" />
+    </com.skyline.widget.layout.RoundCornerLayout>
+
+    <!-- Top -->
+    <com.skyline.widget.layout.RoundCornerLayout
+        android:id="@+id/main_round_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/generic_size_normal"
+        app:cornerRadius="@dimen/corner_radius"
+        app:topEnabled="true"
+        app:bottomEnabled="false">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Top only"
+            android:textColor="@android:color/white"
+            android:background="@color/style_2" />
+    </com.skyline.widget.layout.RoundCornerLayout>
+
+    <!-- Bottom -->
+    <com.skyline.widget.layout.RoundCornerLayout
+        android:id="@+id/main_round_layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/generic_size_normal"
+        app:cornerRadius="@dimen/corner_radius"
+        app:topEnabled="false"
+        app:bottomEnabled="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Bottom only"
+            android:textColor="@android:color/white"
+            android:background="@color/style_3" />
+    </com.skyline.widget.layout.RoundCornerLayout>
+
+    <!-- Top left & Bottom right -->
+    <com.skyline.widget.layout.RoundCornerLayout
+        android:id="@+id/main_round_layout_4"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/generic_size_normal"
+        app:cornerRadius="@dimen/corner_radius"
+        app:topLeftEnabled="true"
+        app:topRightEnabled="false"
+        app:bottomLeftEnabled="false"
+        app:bottomRightEnabled="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Top left &amp; Bottom right"
+            android:textColor="@android:color/white"
+            android:background="@color/style_4" />
+    </com.skyline.widget.layout.RoundCornerLayout>
+
+    <!-- Top right & Bottom left -->
+    <com.skyline.widget.layout.RoundCornerLayout
+        android:id="@+id/main_round_layout_5"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/generic_size_normal"
+        app:cornerRadius="@dimen/corner_radius"
+        app:topLeftEnabled="false"
+        app:topRightEnabled="true"
+        app:bottomLeftEnabled="true"
+        app:bottomRightEnabled="false">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Top right &amp; Bottom left"
+            android:textColor="@android:color/white"
+            android:background="@color/style_5" />
+    </com.skyline.widget.layout.RoundCornerLayout>
+
+    <SeekBar
+        android:id="@+id/main_seek_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/generic_size_normal" />
+
+</LinearLayout>
