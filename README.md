@@ -1,5 +1,7 @@
 RoundCornerLayout
 ==========
+[![Build Status](https://travis-ci.org/skyline1631/RoundCornerLayout.svg?branch=master)](https://travis-ci.org/skyline1631/RoundCornerLayout)
+
 A frame layout with rounded corners for Android.
 
 Snapshot
