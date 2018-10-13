@@ -26,7 +26,6 @@ import android.view.View;
 import android.graphics.Path;
 import android.graphics.RectF;
 import android.graphics.Canvas;
-import android.graphics.Region;
 import android.widget.FrameLayout;
 
 public class RoundCornerLayout extends FrameLayout {
@@ -84,7 +83,6 @@ public class RoundCornerLayout extends FrameLayout {
         }
 
         path.addRoundRect(rect, arrayRadius, Path.Direction.CW);
-        canvas.clipPath(path, Region.Op.REPLACE);
         canvas.clipPath(path);
 
         super.dispatchDraw(canvas);
